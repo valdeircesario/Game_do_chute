@@ -27,18 +27,9 @@ function falar(texto) {
 function carregarVozes() {
     const vozes = speechSynthesis.getVoices();
     // Tenta encontrar uma voz feminina
-    vozFeminina = vozes.find(voz => 
-        voz.name.toLowerCase().includes('female') && voz.lang.startsWith('pt')
-    );
-
-    // Se não encontrar, pode tentar pegar qualquer voz em português
+    vozFeminina = vozes.find(voz => voz.name.toLowerCase().includes('female') || voz.name.toLowerCase().includes('voix'));
     if (!vozFeminina) {
-        vozFeminina = vozes.find(voz => voz.lang.startsWith('pt'));
-    }
-
-    // Se ainda não encontrar, usa a primeira voz disponível
-    if (!vozFeminina) {
-        vozFeminina = vozes[0]; 
+        vozFeminina = vozes[0]; // Se não encontrar, usa a primeira voz disponível
     }
 }
 
@@ -72,3 +63,20 @@ document.getElementById('adivinhar').addEventListener('click', () => {
 
 
 document.getElementById('novo').addEventListener('click', iniciarJogo);
+
+
+
+//para adcionat voz masculina
+//vozFeminina = vozes.find(voz => 
+  //      voz.name.toLowerCase().includes('female') && voz.lang.startsWith('pt')
+   // );
+
+    // Se não encontrar, pode tentar pegar qualquer voz em português
+    //if (!vozFeminina) {
+      //  vozFeminina = vozes.find(voz => voz.lang.startsWith('pt'));
+    //}
+
+    // Se ainda não encontrar, usa a primeira voz disponível
+    //if (!vozFeminina) {
+      //  vozFeminina = vozes[0]; 
+    //}
