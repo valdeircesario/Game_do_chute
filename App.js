@@ -6,19 +6,19 @@ let vozFeminina;
 function iniciarJogo() {
     numeroSecreto = Math.floor(Math.random() * 20) + 1; // Gera um novo número secreto
     tentativas = 0; // Reinicia o contador de tentativas
-    document.getElementById('result').innerHTML = ''; // Limpa o resultado anterior
-    document.getElementById('adivinhar').disabled = false; // Habilita o botão de adivinhar
-    document.getElementById('chute').value = ''; // Limpa o campo de entrada
-    falar('Game do Numero Secreto, Descubra o Numero !');
-    falar('Vamos jogar?');
-    falar('Escolha um número, entre 1 e 20.');
+    document.getElementById('result').innerHTML = ''; 
+    document.getElementById('adivinhar').disabled = false; 
+    document.getElementById('chute').value = ''; 
+    falar('Game!! do Numero Secreto! Descubra o Numero !!');
+    falar('Vamos jogar??');
+    falar('Escolha um número, entre 1 e 20!!');
 }
 
-// Função para falar o texto com a voz escolhida
+// Função para falar o texto com a voz 
 function falar(texto) {
     if (vozFeminina) {
         const utterance = new SpeechSynthesisUtterance(texto);
-        utterance.voice = vozFeminina; // Define a voz feminina
+        utterance.voice = vozFeminina; 
         speechSynthesis.speak(utterance);
     }
 }
@@ -46,20 +46,20 @@ document.getElementById('adivinhar').addEventListener('click', () => {
     let mensagem;
 
     if (chute === numeroSecreto) {
-        mensagem = `Parabéns!! Você Acertou o Número Secreto,${numeroSecreto} com ${tentativas} ${tentativas > 1 ? 'tentativas' : 'tentativa'}.`;
+        mensagem = `Parabéns!! Você Acertou!${numeroSecreto}, é o munero secreto. com ${tentativas} ${tentativas > 1 ? 'tentativas' : 'tentativa'}.`;
         document.getElementById('result').innerHTML = mensagem;
         falar(mensagem);
-        document.getElementById('adivinhar').disabled = true; // Desabilita o botão após a vitória
+        document.getElementById('adivinhar').disabled = true; 
     } else if (chute > numeroSecreto) {
-        mensagem = 'O Número Secreto é Menor Que, ' + chute;
+        mensagem = 'O Número Secreto é Menor Que! ' + chute;
     } else {
-        mensagem = 'O Número Secreto é Maior Que, ' + chute;
+        mensagem = 'O Número Secreto é Maior Que! ' + chute;
     }
 
     document.getElementById('result').innerHTML = mensagem;
     chuteInput.value = '';
-    falar(mensagem); // Limpa o campo de entrada
+    falar(mensagem); 
 });
 
-// Adiciona o evento ao botão "Novo Jogo"
+
 document.getElementById('novo').addEventListener('click', iniciarJogo);

@@ -14,7 +14,7 @@ body {
 }
 
 .conteiner1 {
-    background-color: white; /* Muda a cor de fundo para branco */
+    background-color: white; 
     border-radius: 30px;
     padding: 20px;
     box-shadow: 1px 1px 12px #2507e7;
@@ -26,8 +26,8 @@ body {
 
 .conteiner1 img {
     width: 100%;
-    height: auto; /* Mantém a proporção da imagem */
-    border-radius: 30px; /* Para combinar com o contêiner */
+    height: auto; 
+    border-radius: 30px; 
 }
 
 h1, h2, h4 {
@@ -120,7 +120,7 @@ footer {
     }
 
     button {
-        width: 100%; /* Botões ocupam 100% da largura */
+        width: 100%; 
         padding: 10px 0;
     }
 }
