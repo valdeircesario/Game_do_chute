@@ -1,124 +1,149 @@
 body {
-    background-image: url('https://krino.cl/assets/robot2-e8f5f6db.png');
-            font-family:Georgia, 'Times New Roman', Times, serif;
-            margin: 0;
-            padding: 0;
-            background-size: 70%;
-  background-repeat: no-repeat;
-  background-position: center;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  width: 100%;
-  overflow: hidden;
-        }
-        .conteiner{
-            height: 450px;
-            border-radius: 30px;
-            margin-left: 19%;
-            margin-right: 19%;
-            border: 2px double white;
-            margin-top: 10px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            box-shadow: 1px 1px 12px #2507e7;
-            
-            
-            
-        }
-        h1{
-            color: rgb(170, 230, 5);
-            font-size: 2.5rem;
-            margin-top: 90px;
-            margin-left: 180px;
-            margin-right: 20px;
-        }
-        h2{
-            color: rgb(170, 230, 5);
-            font-size: 3.5rem;
-            margin-bottom: auto;
-        }
-        p{
-            color:rgb(170, 230, 5);
-            font-size: 1.5rem;
-        }
-        input {
-            
-            border-radius: 10px;
-            margin: 10px;
-            padding: 10px;
-            width: 100px;
-            text-align: center;
-        }
-        button {
-            background-color: rgb(80, 80, 250);
-            border-radius: 10px;
-            margin-bottom: 20px;
-            padding: 10px 40px;
-            font-size: 1rem;
-            color:rgb(2, 5, 19);
-            cursor: pointer;
-            box-shadow: 1px 1px 12px #2507e7;
-        }
-        #result {
-            margin-top: 10px;
-            margin-bottom: 10px;
-            font-size: 2rem;
-            color: rgb(170, 230, 5);
-        }
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e3edfb;
+    
+}
 
-        button:hover{
-            background-color: blue;
-        }
-        
+.conteiner {
+    margin: 50px auto;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 800px;
+}
 
-        footer{
-            
-            margin-top: auto;
-            color:rgb(247, 247, 251);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 20px;
-            width: 100%;
-            font-size: 1.2rem;
-        }
-        @media (max-width:600px) {
-            body{
-                background-size: 98%;
+.conteiner1 {
+    background-color: white; /* Muda a cor de fundo para branco */
+    border-radius: 30px;
+    padding: 20px;
+    box-shadow: 1px 1px 12px #2507e7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 
-            }
-            .conteiner{
-                margin-left: 15px;
-                margin-right: 15px;
-                height: 350px;
-            }
-            h1{
-                font-size: 1.9rem;
-                margin-left: 10px;
-                margin-right: 10px;
-                color: blue;
-                margin-top: 150px;
-            }
-            h2{ color: blue;
-                font-size: 1.3rem;
-            }
-            p{
-                font-size: 0.95rem;
-                color: blue;
-                
-            }
-            #result{
-                margin-left: 20px;
-                margin-top: -10px;
-                font-size: 1.2rem;
-                color: blue;
-            }
-            footer{
-                color: blue;
-                font-size: 0.9rem;
-            }
-            
-        }
+.conteiner1 img {
+    width: 100%;
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 30px; /* Para combinar com o contêiner */
+}
+
+h1, h2, h4 {
+    
+    color: rgb(170, 230, 5);
+    text-align: center; /* Centraliza o texto */
+}
+
+h1 {
+    font-size: 3.5rem;
+    margin: 5px 0;
+}
+
+h2 {
+    
+    font-size: 2.5rem;
+    margin-top: -350px;
+}
+
+h4 {
+    font-size: 1.5rem;
+}
+
+input {
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+    width: 100px;
+    text-align: center;
+}
+
+button {
+    background-color: rgb(80, 80, 250);
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 10px 40px;
+    font-size: 1rem;
+    color: rgb(240, 240, 242);
+    cursor: pointer;
+    box-shadow: 1px 1px 12px #2507e7;
+}
+
+#result {
+    margin: 10px 0;
+    font-size: 2rem;
+    color: rgb(170, 230, 5);
+}
+
+button:hover {
+    background-color: rgb(170, 170, 243);
+}
+
+footer {
+    margin-top: auto;
+    color: rgb(155, 155, 249);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20px;
+    width: 100%;
+    font-size: 1.2rem;
+}
+
+@media (max-width: 800px) {
+    .conteiner {
+        margin: 20px;
+        padding: 10px;
+    }
+    
+    h1 {
+        font-size: 2.2rem;
+        margin-top: 20px;
+        color: #43f608;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+        margin-top: -160px;
+        color: #43f608;
+    }
+
+    h4 {
+        font-size: 1rem;
+        color: #43f608;
+    }
+
+    #result {
+        font-size: 1.2rem;
+        color: #43f608;
+    }
+
+    button {
+        width: 100%; /* Botões ocupam 100% da largura */
+        padding: 10px 0;
+    }
+}
+
+@media (max-width: 420px) {
+    h1 {
+        font-size: 1.4rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+        margin-top: -140px;
+    }
+
+    h4 {
+        font-size: 0.9rem;
+    }
+
+    #result {
+        font-size: 1rem;
+    }
+
+    footer {
+        font-size: 0.8rem;
+    }
+}
