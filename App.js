@@ -67,16 +67,16 @@ document.getElementById('novo').addEventListener('click', iniciarJogo);
 
 
 //para adcionat voz masculina
-//vozFeminina = vozes.find(voz => 
-  //      voz.name.toLowerCase().includes('female') && voz.lang.startsWith('pt')
-   // );
+vozFeminina = vozes.find(voz => 
+        voz.name.toLowerCase().includes('female') && voz.lang.startsWith('pt')
+   );
 
     // Se não encontrar, pode tentar pegar qualquer voz em português
-    //if (!vozFeminina) {
-      //  vozFeminina = vozes.find(voz => voz.lang.startsWith('pt'));
-    //}
+    if (!vozFeminina) {
+      vozFeminina = vozes.find(voz => voz.lang.startsWith('pt'));
+    }
 
     // Se ainda não encontrar, usa a primeira voz disponível
-    //if (!vozFeminina) {
-      //  vozFeminina = vozes[0]; 
-    //}
+    if (!vozFeminina) {
+        vozFeminina = vozes[0]; 
+    }
