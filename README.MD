@@ -7,7 +7,7 @@ Além do aspecto interativo do jogo, implementamos recursos sonoros que enriquec
 
 ## Link do Game do Numero Secreto
 
-Acesse o jogo online aqui: [Jogo: Game do Numero Secreto](https://valdeircesario.github.io/Busines-card/)
+Acesse o jogo online aqui: [Jogo: Game do Numero Secreto](https://gamechut.netlify.app/)
 
 ## Visão Geral
 
