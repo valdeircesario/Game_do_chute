@@ -5,9 +5,9 @@ O Jogo do Número Secreto é uma experiência divertida que desafia você a adiv
 
 Além do aspecto interativo do jogo, implementamos recursos sonoros que enriquecem a experiência do usuário, tornando cada jogada mais imersiva. Prepare-se para testar suas habilidades e se divertir enquanto tenta descobrir qual é o número!
 
-## Link do Cartão de Visita
+## Link do Game do Numero Secreto
 
-Acesse o jogo online aqui: [Meu Cartão de Visita](https://valdeircesario.github.io/Busines-card/)
+Acesse o jogo online aqui: [Jogo: Game do Numero Secreto](https://valdeircesario.github.io/Busines-card/)
 
 ## Visão Geral
 
@@ -17,7 +17,7 @@ Além da lógica do jogo, implementamos a funcionalidade de leitura de voz atrav
 
 ## Demonstração
 
-Veja abaixo algumas capturas de tela do MeuPortfolio:
+Veja abaixo algumas capturas de tela do Game:
 
 <div style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
     <div style="margin-bottom: 20px;">
