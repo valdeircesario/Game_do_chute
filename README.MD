@@ -38,9 +38,12 @@ Veja abaixo algumas capturas de tela do Game:
 O projeto foi desenvolvido com as seguintes tecnologias:
 <div style="display: inline_block"><br>
         
-  <img align="center" alt="VAL-HTML" height="50" width="60" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg">
-  <img align="center" alt="VAL-CSS" height="50" width="60" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg">
-  <img align="center" alt="VAL-vscode" height="50" width="60" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg" >
+  <img align="center" alt="VAL-HTML" height="25" width="95" src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white">
+  <img align="center" alt="VAL-CSS" height="25" width="95" src="https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white">
+  <img align="center" alt="VAL-vscode" height="25" width="95" src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E" >
+    <img align="center" alt="VSCode" height="25"
+    width="95" src="https://img.shields.io/badge/VSCode-%23007ACC.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white">
+    
  
 
   
